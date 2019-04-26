@@ -13,7 +13,7 @@
       <input id="password" type="password" placeholder="Password...">
     </div>
     <div>
-      <button id="sign-in">Sign In/Register</button>
+      <button id="sign-in">Sign In</button>
       <button id="sign-out">Sign Out</button>
     </div>
   </form>
@@ -56,11 +56,6 @@
       var auth = firebase.auth();
       var currentUser = auth.currentUser;
       
-      // Register a new user
-firebase.auth().createUserWithEmailAndPassword(email, password)
- .catch(function (err) {
-   // Handle errors
- });
 
 // Sign in existing user
 firebase.auth().signInWithEmailAndPassword(email, password)
